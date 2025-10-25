@@ -1,0 +1,12 @@
+.def var1 .byte { #23 }                             ; Variable declaration
+.def var2 .arr #10 .byte { "WELCOME!!" #0 }         ; Array declaration
+
+.start:
+    mov r2 r4
+    !mov r10 var1
+    add r0 r1 r10
+
+loop: 
+    cmp r3 r4
+    !b:ne loop
+    

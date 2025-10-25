@@ -2,6 +2,7 @@
 
 
 
+
 const int instruction_definitions_count = 56;
 const struct instruction_definition instruction_definitions[56] = {
 	{"mov", 0, IE_CAT_3, {ARG_REG, ARG_REG_IMM}, {
@@ -141,20 +142,20 @@ const char port_names[8][3] = {
 	"p7"
 };
 
-const int directiove_names_count = 6;
+const int directive_names_count = 6;
 const char directive_names[6][10] = {
 	".def",
 	".byte",
 	".bytes",
 	".arr",
 	".label",
-	".main"
+	".start"
 };
 
-const int macro_manes_count = 2;
+const int macro_names_count = 2;
 const char macro_names[2][10] = {
-	"mov!",
-	"b!"
+	"!mov",
+	"!b"
 };
 
 

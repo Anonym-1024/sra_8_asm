@@ -1,6 +1,7 @@
-#ifndef RESOURCES_H
-#define RESOURCES_H
+#ifndef RESOURCES_HEADER
+#define RESOURCES_HEADER
 
+#include <stdbool.h>
 
 enum instruction_argument {
 	ARG_REG,
@@ -46,12 +47,11 @@ extern const char system_register_names[6][10];
 extern const int port_names_count;
 extern const char port_names[8][3];
 
-extern const int directiove_names_count;
+extern const int directive_names_count;
 extern const char directive_names[6][10];
 
-extern const int macro_manes_count;
+extern const int macro_names_count;
 extern const char macro_names[2][10];
-
 
 
 
